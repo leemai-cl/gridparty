@@ -1,0 +1,42 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container 
+{
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(200px , 1fr)); 
+	background-color: cyan;
+	padding: 10px
+}
+.grid-item {
+	background-color: grey;
+	text-align: center;
+}
+.pagetitle
+	text-align: center;
+</style>
+</head>
+<body>
+
+<h1>Grid Elements<h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child elements of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+	<div class="grid-item"><button>1</button></div>
+	<div class="grid-item"><button>2</button></div>
+	<div class="grid-item"><button>3</button></div>
+	<div class="grid-item"><button>4</button></div>
+	<div class="grid-item"><button>5</button></div>
+	<div class="grid-item"><button>6</button></div>
+	<div class="grid-item"><button>7</button></div>
+	<div class="grid-item"><button>8</button></div>
+	<div class="grid-item"><button>9</button></div>
+
+</div>
+<script>   </script>
+</body>
+</html>
