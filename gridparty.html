@@ -9,10 +9,7 @@
 	background-color: cyan;
 	padding: 10px
 }
-.grid-item {
-	background-color: grey;
-	text-align: center;
-}
+
 .pagetitle
 	text-align: center;
 
@@ -26,17 +23,23 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
+  
+}
+
+.grid-item {
+	background-color: grey;
+	text-align: center;
+}
   
 </style>
 </head>
 <body>
 
-<h1>Grid Party<h1>
+<strong><center><h1>Grid Party</h1></strong>
 
-<p>This is my project page named <em>Grid Party</em>.</p>
+<p>This is my project page named <em>Grid Party</em>.</p></center>
 
-<p>This is where I would put my instructions for the page. My plan is for these buttons to do things when I click them.</p>
+<p>This is where I would put my instructions for the page. My plan is for these buttons to do things when I click them. </p>
 
 <div class="grid-container">
 	<div class="grid-item"><button>1</button></div>
@@ -51,8 +54,8 @@
 
 </div>
 <div class="grid-container">
-	<button class="button">__</button>
-	<button class="button">__</button>
+	<button class="grid-item button">__</button>
+	<button class="button grid-item">__</button>
 	<button class="button">__</button>
 	<button class="button">__</button>
 	<button class="button">__</button>
@@ -62,6 +65,12 @@
 	<button class="button">__</button>
 	
 	</div>
+<div>
+	<button class="button">__</button>
+	<button class="button">__</button>
+	<button class="button">__</button>
+	
+</div>
 <script>   </script>
 </body>
 </html>
