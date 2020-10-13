@@ -8,7 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.mobile-container {
+.mobile-first {
   max-width: 480px;
   margin: auto;
   background-color: #555;
@@ -85,17 +85,17 @@ body {
 
 
 <!-- Simulate a smartphone / tablet look -->
-<div class="mobile-container">
+<div class="mobile-first">
 
 	<!-- Top Navigation Menu -->
 	<div class="topnav">
 	  <a href="#home" class="active">Logo</a>
 	  <div id="myLinks">
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-		<a href="#about">About</a>
+		<a href="jump/index.html">jump</a>
+		<a href="falling/index.html">falling</a>
+		<a href="old_ver/old ver.html">old</a>
 	  </div>
-	  <a href="javascript:void(0);" class="icon" onclick="myFunction4()">
+	  <a href="javascript:" class="icon" onclick="myFunction4()">
 		<i class="fa fa-bars"></i>
 	  </a>
 	</div>
@@ -109,6 +109,13 @@ body {
 
 <p>This is where I would put my instructions for the page. My plan is for these buttons to do things when I click them. </p>
 
+<center>
+	
+	<br><button onclick="myFunction()">Click on</button></br>
+	<br><button onclick="myFunction2()">Click off</button></br>
+	
+</center>
+<b></b>
 <div class="grid-container">
 	<div class="grid-item"><button>1</button></div>
 	<div class="grid-item"><button>2</button></div>
@@ -118,24 +125,16 @@ body {
 	<button class="grid-item button">__</button>
 	<button class="button grid-item">__</button>
 	<button class="button">__</button>
-	
+	<button class="button">__</button>
 	
 	</div>
 <div>
-<center>
-	<button class="button">__</button>
-	<button class="button">__</button>
-	<button class="button">__</button>
-	<br><button onclick="myFunction()">Click on</button></br>
-	<br><button onclick="myFunction2()">Click off</button></br>
-	
-</center>
+
 	
 </div>
 <script>  
 	function myFunction() {
-
-	document.getElementById("demo").innerHTML = "This is on"; 
+		document.getElementById("demo").innerHTML = "This is on"; 
 	
 	}
 
@@ -144,14 +143,16 @@ body {
 	}
 
 	function myFunction4() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+  		var x = document.getElementById("myLinks");
+  			if (x.style.display === "block") {
+    			x.style.display = "none";
+  				} 
+			else {
+    			x.style.display = "block";
+  				}
 }
 </script>
+
 
 <p id="demo"></p>
 <div id="jsbutton"></div>

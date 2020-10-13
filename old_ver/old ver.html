@@ -1,0 +1,85 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container 
+{
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(200px , 1fr)); 
+	background-color: cyan;
+	padding: 10px
+}
+
+.pagetitle
+	text-align: center;
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+}
+
+.grid-item {
+	background-color: grey;
+	text-align: center;
+}
+  
+</style>
+</head>
+<body>
+
+<strong><center><h1>Grid Party</h1></strong>
+
+<p>This is my project page named <em>Grid Party</em>.</p></center>
+
+<p>This is where I would put my instructions for the page. My plan is for these buttons to do things when I click them. </p>
+
+<div class="grid-container">
+	<div class="grid-item"><button>1</button></div>
+	<div class="grid-item"><button>2</button></div>
+	
+</div>
+<div class="grid-container">
+	<button class="grid-item button">__</button>
+	<button class="button grid-item">__</button>
+	<button class="button">__</button>
+	
+	
+	</div>
+<div>
+<center>
+	<button class="button">__</button>
+	<button class="button">__</button>
+	<button class="button">__</button>
+	<br><button onclick="myFunction()">Click on</button></br>
+	<br><button onclick="myFunction2()">Click off</button></br>
+	
+</center>
+	
+</div>
+<script>  
+	function myFunction() {
+
+	document.getElementById("demo").innerHTML = "This is on"; 
+	
+	}
+
+	function myFunction2() {
+		document.getElementById("demo").innerHTML = "";
+	}
+
+	
+</script>
+
+<p id="demo"></p>
+<div id="jsbutton"></div>
+
+</body>
+</html>
