@@ -8,6 +8,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/812dKz%2BvBcL._AC_SL1500_.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mobile-first {
   max-width: 480px;
   margin: auto;
@@ -58,9 +72,9 @@ body {
 	padding: 10px
 }
 
-.pagetitle
+.pagetitle /*{
 	text-align: center;
-
+}*/
 .button {
   background-color: cyan;
   border: none;
@@ -83,15 +97,15 @@ body {
 </head>
 <body>
 
+<div class="parallax"></div>
 
-<!-- Simulate a smartphone / tablet look -->
 <div class="mobile-first">
 
 	<!-- Top Navigation Menu -->
 	<div class="topnav">
 	  <a href="#home" class="active">Logo</a>
 	  <div id="myLinks">
-		<a href="jump/index.html">jump</a>
+		<a href="nowhere.html">about_dev</a>
 		<a href="falling/index.html">falling</a>
 		<a href="old_ver/old ver.html">old</a>
 	  </div>
@@ -101,13 +115,13 @@ body {
 	</div>
 	
 	
-	<!-- End smartphone / tablet look -->
+
 
 <strong><center><h1>Grid Party</h1></strong>
 
-<p>This is my project page named <em>Grid Party</em>.</p></center>
+<h2>This is my project page named <br><em>Grid Party</em>.</h2></center>
 
-<p>This is where I would put my instructions for the page. My plan is for these buttons to do things when I click them. </p>
+<h3>    INSTRUCTIONS</h3> <p>fjdkal;lkj </p>
 
 <center>
 	
@@ -117,29 +131,40 @@ body {
 </center>
 <b></b>
 <div class="grid-container">
-	<div class="grid-item"><button>1</button></div>
-	<div class="grid-item"><button>2</button></div>
+	<div class="grid-item"><button onclick="myFunction3()">1</button></div>
+	<div class="grid-item"><button onclick="myFunction5()">2</button></div>
 	
 </div>
-<div class="grid-container">
+<!-- <div class="grid-container">
 	<button class="grid-item button">__</button>
 	<button class="button grid-item">__</button>
 	<button class="button">__</button>
 	<button class="button">__</button>
 	
-	</div>
-<div>
+	</div> -->
 
-	
-</div>
-<script>  
+<script> 
+	function myFunction5() {
+		document.getElementById("demo").innerHTML = "";
+	}
+
 	function myFunction() {
-		document.getElementById("demo").innerHTML = "This is on"; 
-	
+		document.getElementById("onoff").innerHTML = "LETSGOOOOO"
+		
+	}
+
+	function myFunction3() {
+		var demo = document.getElementById("demo")
+		var button = document.createElement("BUTTON")
+		button.innerHTML = "___";
+		demo.appendChild(button)
+		
+		console.log(button)
 	}
 
 	function myFunction2() {
-		document.getElementById("demo").innerHTML = "";
+		document.getElementById("onoff").innerHTML = "";
+		
 	}
 
 	function myFunction4() {
@@ -153,9 +178,10 @@ body {
 }
 </script>
 
-
-<p id="demo"></p>
+<div class="mobile-first">
+<center><p id="onoff"></p>
 <div id="jsbutton"></div>
-
+<p id="demo"></p></center>
+</div>
 </body>
 </html>

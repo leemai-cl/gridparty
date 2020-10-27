@@ -5,6 +5,15 @@ var both = 0;
 var counter = 0;
 var currentBlocks = [];
 
+function myFunction4() {
+    var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+            } 
+      else {
+          x.style.display = "block";
+            }
+}
 function moveLeft(){
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     if(left>0){
