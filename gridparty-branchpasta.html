@@ -4,6 +4,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.collapsible{
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px; 
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.active, .collapsible:hover {
+	background-color: orangered
+}
+
+.content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: whitesmoke
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,6 +49,7 @@ body {
 }
 }
 
+@media (max-width: 790px) {
 .mobile-first {
   max-width: 480px;
   margin: auto;
@@ -33,7 +58,7 @@ body {
   color: white;
   border-radius: 10px;
 }
-
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -124,8 +149,11 @@ body {
 
 <h2>This is my project page named <br><em>Grid Party</em>.</h2></center>
 
-<h3>    INSTRUCTIONS</h3> <p>trying a commit </p>
-
+<h3>    INSTRUCTIONS</h3> 
+<button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+<p>This is a description of what my page offers! try clicking the buttons: button 1 creats more buttons! button 2 removes ALL created buttons. </p>
+</div>
 <center>
 	
 	<br><button onclick="myFunction()">Click on</button></br>
